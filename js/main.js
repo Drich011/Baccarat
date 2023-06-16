@@ -93,7 +93,7 @@ $(document).ready(function(){
         console.log("START")
       //  layout.handleTouchStart(this,e)
     })
-    $('.buttons-chips .chips, .control-area-mobile .chips').on('dragend',function(e){
+    $('.buttons-chips .chips, .control-area-mobile .chips').on('touchend',function(e){
         console.log("END")
         console.log(e,"EEEEEEEE")
        
