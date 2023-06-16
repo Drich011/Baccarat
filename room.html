@@ -1362,6 +1362,14 @@
                         </div>
                     </div>
                 </div>
+                <script>
+                    function drop(event) {
+                        event.preventDefault();
+                        const data = event.dataTransfer.getData("Text");
+                        event.target.appendChild(document.getElementById(data));
+                        console.log("TRANSFERRRRRR")
+                    }
+                </script>
                 <div class="legend-mobile">
                     <div class="right-indi">
                         <div>
