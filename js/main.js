@@ -108,7 +108,7 @@ $(document).ready(function(){
         var lastTouchX =  touch.clientX;
         var lastTouchY = touch.clientY;
         console.log(lastTouchX)
-        const touchEvent = new TouchEvent('touchstart', {
+        const touchEvent = new TouchEvent('click', {
         bubbles: true,
         cancelable: true,
         touches: [
