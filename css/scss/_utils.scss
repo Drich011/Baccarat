@@ -1,0 +1,48 @@
+.p-0{
+    padding: 0;
+}
+.w-fit{
+    width: fit-content;
+}
+
+.light-blue{
+    color: #58B2FF !important;
+}
+.blue{
+    color: #0079e2 !important;
+}
+.green{
+    color: #619A16 !important;
+}
+.red{
+    color: #F70849 !important;
+}
+
+.mobile{
+    display: none;
+}
+.mobile-flex{
+    display: none;
+}
+.desktop{
+    display: block;
+}
+
+
+.icon{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: block;
+    &.icon-md{
+        height: 14px;
+        width: 27px !important;
+    }
+    &.icon-sm{
+        height: 13px;
+        width: 19px !important;
+    }
+    &.icon-yuan{
+        background-image: url(../img/icons/yuan.svg);
+    }
+}
