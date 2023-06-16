@@ -1362,53 +1362,14 @@
                         </div>
                     </div>
                 </div>
-                <script>
-                    function drop(e) {
-                        const targetElement = document.getElementById('TestChip');
-
-                        // Create a touch event+
-                                // Get the current position of the mouse cursor+
-
-                        var touch = e.changedTouches[0];  
-                        console.log(touch,"touch")
-                        var lastTouchX =  touch.clientX;
-                        var lastTouchY = touch.clientY;
-                        console.log(lastTouchX)
-                        const touchEvent = new TouchEvent('click', {
-                        bubbles: true,
-                        cancelable: true,
-                        touches: [
-                            new Touch({
-                            identifier: Date.now(),
-                            target: targetElement,
-                            clientX: lastTouchX,
-                            clientY: lastTouchY,
-                            pageX: lastTouchX,
-                            pageY: lastTouchY,
-                            }),
-                        ],
-                        changedTouches: [
-                            new Touch({
-                            identifier: Date.now(),
-                            target: targetElement,
-                            clientX: lastTouchX,
-                            clientY: lastTouchY,
-                            pageX: lastTouchX,
-                            pageY: lastTouchY,
-                            }),
-                        ],
-                        });
-                        // Find the element at the mouse position
-                        var element = document.elementFromPoint(lastTouchX, lastTouchY);
-
-                        // Dispatch the click event on the element
-                        if (element) {
-                            console.log(element)
-                        element.dispatchEvent(touchEvent);
-                    }
+                <!-- <script>
+                    function drop(event) {
+                        event.preventDefault();
+                        const data = event.dataTransfer.getData("Text");
+                        event.target.appendChild(document.getElementById(data));
                         console.log("TRANSFERRRRRR")
                     }
-                </script>
+                </script> -->
                 <div class="legend-mobile">
                     <div class="right-indi">
                         <div>
