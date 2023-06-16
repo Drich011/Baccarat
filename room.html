@@ -532,6 +532,7 @@
                 </div>
             </div> -->
         </div>
+
         <div class="mobile-controls">
             <div class="control-area-mobile">
                 <div class="top-control mx-auto">
@@ -540,7 +541,7 @@
                     </a>
                     <div class="chips">
                         <div class="chips-inner">
-                            <button class="btn-chip chip-1k" draggable="true" value="1k" data-val="1k"  id="TestChip"></button>
+                            <button class="btn-chip chip-1k" draggable="true" value="1k" data-val="1k"   id="TestChip" ondragstart="dragStart(event)"></button>
                             <button class="btn-chip chip-5k" draggable="true" value="5k" data-val="5k"></button>
                             <button class="btn-chip chip-10k" draggable="true" value="10k" data-val="10k"></button>
                             <button class="btn-chip chip-50k" draggable="true" value="50k" data-val="50k"></button>
@@ -566,6 +567,13 @@
                 </div>
             </div>
         </div>
+        <script>
+            function dragStart(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+           
+            console.log("Test")
+        }
+    </script>
     </div>
     <!-- <div class="mobile-menu">
         <button class="btn bnt-primary toggle-tables">
