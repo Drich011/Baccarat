@@ -139,9 +139,9 @@ $(document).ready(function(){
         if (element) {
             console.log(element)
         element.dispatchEvent(touchEvent);
-}
+    }
         // Dispatch the touch event to trigger it at the last touch location
-        targetElement.dispatchEvent(touchEvent);
+        // targetElement.dispatchEvent(touchEvent);
 
     })
 
